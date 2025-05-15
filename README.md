@@ -468,3 +468,29 @@ console.log(intervalo); // Espera-se que imprima: { arrayNoIntervalo: [15, 21, 3
 ```
 
 </details>
+
+## 12 - Method Restrictions
+
+<details>
+  <summary>
+  Implemente em todas as funções a resolução dos requisitos sem a utilização de métodos.
+
+  </summary> <br />
+
+  **OBS: Implemente em todos os requisitos do ( 1° ao 11° )** <br /> <br />
+  Exemplo: Uma solução onde o problema a ser resolvido é elevar um número ao quadrado e que pode ser resolvida com métodos e sem métodos <br /> <br />
+
+  **Com Métodos:**
+  ```javascript
+    function aoQuadrado(n) {
+      return Math.pow(n, 2);
+    }
+  ```
+
+  **Sem Métodos:**
+  ```javascript
+    function aoQuadrado(n) {
+      return n * n;
+    }
+  ```
+</details>
