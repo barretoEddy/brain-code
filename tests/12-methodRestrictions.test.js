@@ -28,12 +28,13 @@ beforeEach(() => {
   ['split', 'join'].forEach(m => adicionarEspiriao(String.prototype, m));
 
   // Array methods
-  ['map', 'find', 'forEach', 'reduce', 'reverse', 'includes'].forEach(m => adicionarEspiriao(Array.prototype, m));
+  ['map', 'find', 'forEach', 'reduce', 'reverse', 'includes', 'push', 'pop', 'splice', 'slice'].forEach(m => adicionarEspiriao(Array.prototype, m));
 
   // Math functions
   adicionarEspiriao(Math, 'max');
+  ['max', 'min', 'pow', 'abs'].forEach(m => adicionarEspiriao(Math, m));
 
-  adicionarEspiriao(Array, 'from'); // ← Restringe Array.from
+  adicionarEspiriao(Array, 'from');
 
   setSpy = jest.fn();
     global.Set = class extends originalSet {
